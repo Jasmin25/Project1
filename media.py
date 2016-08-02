@@ -4,8 +4,6 @@ import webbrowser
 class Movie():
     """This class is made to define functions needed for movie project"""
 
-#    VALID_RATINGS=["G","PG","PG-13","R"]
-
 # Defining "Movie" class with all four attributes
 
     def __init__(self, movie_title, movie_storyline,
@@ -15,7 +13,6 @@ class Movie():
         self.poster_image_url = poster_image
         self.trailer_youtube_url = trailer_youtube
 
-# Additional function
-
     def show_trailer(self):
+        """Additional Function"""
         webbrowser.open(self.trailer_youtube_url)
